@@ -1,0 +1,31 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+    <div class="jumbotron">
+      <div class="container">
+        <h1>File Uploader</h1>
+        <p>The LDX Project supports huge file uploads, pause and continue file uploads.</p>
+        <p><a class="btn btn-primary btn-lg" href="/login" role="button">Try now</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Large File Uploads</h2>
+          <p>Have issues transfering really big files? Want to transfer really big file using your favorite browser?</p>
+          <p><a class="btn btn-default" href="#" role="button">Learn More &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Resume Uploads</h2>
+          <p>Network failure during file uploads? Our system provide feature to resume a partially uploaded file.</p>
+          <p><a class="btn btn-default" href="#" role="button">Learn More &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Pause and Continue</h2>
+          <p>Slow network? Want to pause the upload and continue when the network is free?</p>
+          <p><a class="btn btn-default" href="#" role="button">Learn More &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+  })
+})

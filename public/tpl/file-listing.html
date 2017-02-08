@@ -1,0 +1,39 @@
+<!--<div>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#fileListTab" data-toggle="tab">File Lists</a></li>
+    <li><a href="#notesTab" data-toggle="tab">Notes</a></li>
+  </ul>
+</div>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active" id="fileListTab">-->
+    <table class="table table-striped table-bordered">
+      <tr>
+        <th>File Name</th>
+        <th>Size</th>
+        <th>Upload date</th>
+        <th>Download</th>
+        <th>Pdf Viewer</th>
+      </tr>
+      <tr ng-repeat="row in $ctrl.parent.otherFiles | orderBy : 'date'">
+        <td>{{ ::row.name }}</td>
+        <td>{{ ::row.size }}</td>
+        <td>{{ ::row.date | date : 'medium' }}</td>
+        <td class="text-center">
+          <a href="/auth/documents/download/{{ row.name }}">
+            <span class="glyphicon glyphicon-download-alt" style="font-size: 1.5rem; cursor: pointer;" tabindex="2"></span>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="/web/viewer.html?file=/auth/documents/viewer/{{ row.name }}" ng-if="row.isPdf" target="_new">
+            <span class="glyphicon glyphicon-file" style="font-size: 1.5rem; cursor: pointer;" tabindex="2"></span>
+          </a>
+        </td>
+      </tr>
+    </table>
+  <!--</div>
+  <div role="tabpanel" class="tab-pane fade" id="notesTab">
+    <div style="margin: 2rem;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+  </div>
+</div>-->

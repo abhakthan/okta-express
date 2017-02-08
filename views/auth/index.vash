@@ -1,0 +1,66 @@
+@html.extend('auth/layout', function(model) {
+  @html.block('content', function(model) {
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading"><strong>Certificate</strong></div>
+            <div class="panel-body">
+              <h4>1234</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel panel-info">
+            <div class="panel-heading"><strong>Bank Name</strong></div>
+            <div class="panel-body">
+              <h4>Band of USA</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel panel-warning">
+            <div class="panel-heading"><strong>Sessions</strong></div>
+            <div class="panel-body">
+              <h4>1234 Files</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel panel-danger">
+            <div class="panel-heading"><strong>Expires</strong></div>
+            <div class="panel-body">
+              <h4>03/15/2017</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <file-uploader></file-uploader>
+    </div>
+    <hr>
+    <div id="fileupload" style="margin: 3rem auto;"></div>
+    <div class="container">
+      <div class="row">
+        <div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#fileListTab" data-toggle="tab">File Lists</a></li>
+            <li><a href="#notesTab" data-toggle="tab">Notes</a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="fileListTab">
+            <file-list rows="$ctrl.$parent.otherFiles"></file-list>
+        </div>
+          <div role="tabpanel" class="tab-pane fade" id="notesTab">
+            <div style="margin: 2rem;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  })
+})

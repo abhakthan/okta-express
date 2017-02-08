@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>@model.title</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">@model.title</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <div class="navbar-right form-group col-md-5" style="margin-top: 1rem;">
+          <span class="col-md-6">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <div class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+              </div>
+            </div>
+          </span>
+          <span class="col-md-2">
+            <span class="glyphicon glyphicon-cog" style="font-size: 2rem; cursor: pointer; color: white;" title="Settings" tabindex="2"></span>
+          </span>
+          <span class="col-md-2">
+            <span class="glyphicon glyphicon-user" style="font-size: 2rem; cursor: pointer; color: white;" title="Profile" tabindex="2"></span>
+          </span>
+          <span class="col-md-2">
+            <a href="/logout">
+            <span class="glyphicon glyphicon-log-out" style="font-size: 2rem; cursor: pointer; color: white;" title="Logout" tabindex="2"></span></a>
+          </span>
+        </div>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+      </div>
+      <!--/.navbar-collapse -->
+    </div>
+  </nav>
+
+  <wrapper>
+    @html.block('content')
+  </wrapper>
+
+  <div class="container">
+    <hr>
+    <footer>
+      <p>&copy; 2017 Company, Inc.</p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="/js/lib/resumable.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

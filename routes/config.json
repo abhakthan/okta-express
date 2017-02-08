@@ -1,0 +1,10 @@
+{
+  "baseUploadDir": "uploads/",
+  "tempDir": "tmp/",
+  "otherDir": "uploads/other/",
+  "pdfDir": "uploads/pdf/",
+  "saml": {
+    "path": "/login/callback",
+    "issuer": "http://localhost:3000"
+  }
+}
